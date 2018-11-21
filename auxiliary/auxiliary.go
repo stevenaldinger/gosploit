@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/sethgrid/multibar"
 	"sync"
-	"../utility"
+	"github.com/stevenaldinger/gosploit/utility"
 	"strings"
 	"github.com/fatih/color"
 )

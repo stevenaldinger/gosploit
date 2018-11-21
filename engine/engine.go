@@ -11,8 +11,8 @@ import (
 	"strings"
 	"github.com/fatih/color"
 	"github.com/abiosoft/ishell"
-	"../auxiliary"
-	"../modules/exploits/www/wordpress"
+	"github.com/stevenaldinger/gosploit/auxiliary"
+	"github.com/stevenaldinger/gosploit/modules/exploits/www/wordpress"
 )
 
 func RunShell() {
@@ -58,7 +58,7 @@ func RunShell() {
 
 	// Test shell function
 	shell.AddCmd(&ishell.Cmd{
-		Name: "expoits/www/wordpress/content_injection",
+		Name: "exploits/www/wordpress/content_injection",
 		Help: "Test WP for < 4.7 Content Injection",
 		Func: func(c *ishell.Context) {
 			// get RHOST
